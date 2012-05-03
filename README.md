@@ -1,4 +1,4 @@
-OpenLeague
+Open League
 ==========
 
-Initially our ASP.NET Table tennis application rewritten for Windows Azure
+Sport Fixture Management Portal
