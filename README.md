@@ -6,6 +6,7 @@ OpenLeague is a Sports fixture management system.
 ## Prerequisites
 
 * [Windows Azure PowerShell Cmdlets](http://wappowershell.codeplex.com/)
+* [Running PowerShell under .Net 4](http://stackoverflow.com/questions/2094694/how-can-i-run-powershell-with-the-net-4-runtime)
 
 ## Setting up the environment for Windows Azure
 
