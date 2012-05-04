@@ -82,7 +82,7 @@ task Compile {
 
   exec { & msbuild OpenLeague.sln /nologo /m:1 /nr:false /t:Build /v:M /fl /flp:LogFile="$outPath\msbuild.log;Verbosity=Normal" /p:Configuration=Release /p:OutputPath="$outPath" /p:StyleCopEnabled=true /p:StyleCopTreatErrorsAsWarnings=false }
 
-#exec { & msbuild /nologo /t:Publish /v:M $basePath\src\OpenLeague.Cloud\OpenLeague.Cloud.ccproj /p:OutputPath="$outPath\"}
+  exec { & msbuild /nologo /t:Publish /v:M $basePath\src\OpenLeague.Cloud\OpenLeague.Cloud.ccproj /p:OutputPath="$outPath\"}
 }
 
 task Test -depends Compile {
