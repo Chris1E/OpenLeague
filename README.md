@@ -6,7 +6,16 @@ OpenLeague is a Sports fixture management system.
 ## Prerequisites
 
 * [Windows Azure PowerShell Cmdlets](http://wappowershell.codeplex.com/)
-* [Running PowerShell under .Net 4](http://stackoverflow.com/questions/2094694/how-can-i-run-powershell-with-the-net-4-runtime)
+* Running PowerShell under .Net 4
+To run powershell under .Net 4 you need to change the config file of powershell. The powershell config file can be found at $pshome\powershell.exe.config. If the file is not there just create it and add the following to it.
+
+        <?xml version="1.0"?>
+        <configuration>
+            <startup useLegacyV2RuntimeActivationPolicy="true">
+                <supportedRuntime version="v4.0.30319"/>
+                <supportedRuntime version="v2.0.50727"/>
+            </startup>
+        </configuration>
 
 ## Setting up the environment for Windows Azure
 
