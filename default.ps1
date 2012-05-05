@@ -147,6 +147,15 @@ task Deploy -depends Prereq {
     "Created the storage account"
   }
 
+  $storagekey = (Get-StorageKeys -StorageAccountName $storageaccount -SubscriptionId $subscription -Certificate $certificate).Primary
+
+  "Updating diagnostics connection string for cloud deployment"
+    $cloudconfig = [xml](cat "$outpath\app.publish\ServiceConfiguration.Cloud.cscfg")
+    ($cloudconfig.ServiceConfiguration.Role.ConfigurationSettings.Setting |
+        where {$_.GetAttribute("name") -eq "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString"}).SetAttribute("value", "DefaultEndpointsProtocol=https;AccountName=$storageaccount;AccountKey=$storagekey")
+    $cloudconfig.Save("$outpath\app.publish\ServiceConfiguration.Cloud.cscfg")
+    "Diagnostics configuration updated"
+
     "Creating deployment"
     get-hostedservice $servicedns -certificate $certificate -subscriptionid $subscription |
     new-deployment -slot "Staging" -package $deploymentpackage -configuration $deploymentconfig -label $buildnumber -storageservicename $storageaccount |
