@@ -15,6 +15,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E43CB6
 EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "OpenLeague.Cloud", "src\OpenLeague.Cloud\OpenLeague.Cloud.ccproj", "{A4CFBE22-A918-4165-AA96-705B74E208D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Infrastructure", "src\OpenLeague.Infrastructure\OpenLeague.Infrastructure.csproj", "{5C15A5B1-E5E6-437A-9659-3FE42938255E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Model", "src\OpenLeague.Model\OpenLeague.Model.csproj", "{452F12A4-951E-42B7-8ABD-9691170D18A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Persistence", "src\OpenLeague.Persistence\OpenLeague.Persistence.csproj", "{2CA02994-2FD6-4BD1-A620-29493741D33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Tests", "test\OpenLeague.Tests\OpenLeague.Tests.csproj", "{790780BB-555D-484E-A393-4A8FA3715AA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +37,22 @@ Global
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C15A5B1-E5E6-437A-9659-3FE42938255E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C15A5B1-E5E6-437A-9659-3FE42938255E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C15A5B1-E5E6-437A-9659-3FE42938255E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C15A5B1-E5E6-437A-9659-3FE42938255E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452F12A4-951E-42B7-8ABD-9691170D18A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452F12A4-951E-42B7-8ABD-9691170D18A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452F12A4-951E-42B7-8ABD-9691170D18A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452F12A4-951E-42B7-8ABD-9691170D18A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA02994-2FD6-4BD1-A620-29493741D33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA02994-2FD6-4BD1-A620-29493741D33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA02994-2FD6-4BD1-A620-29493741D33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA02994-2FD6-4BD1-A620-29493741D33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790780BB-555D-484E-A393-4A8FA3715AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790780BB-555D-484E-A393-4A8FA3715AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790780BB-555D-484E-A393-4A8FA3715AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790780BB-555D-484E-A393-4A8FA3715AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +60,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{21E0D837-0AB8-497A-AE1A-65CA4619CB39} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{A4CFBE22-A918-4165-AA96-705B74E208D9} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
+		{5C15A5B1-E5E6-437A-9659-3FE42938255E} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
+		{452F12A4-951E-42B7-8ABD-9691170D18A5} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
+		{2CA02994-2FD6-4BD1-A620-29493741D33F} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
+		{790780BB-555D-484E-A393-4A8FA3715AA2} = {E7C0CF22-69D6-42E3-9F78-827F3B1427E1}
 	EndGlobalSection
 EndGlobal
