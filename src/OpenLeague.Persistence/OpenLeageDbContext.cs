@@ -6,6 +6,11 @@
 
     public class OpenLeageDbContext : DbContext
     {
-        public DbSet<Player> Players { get; set; }
+        public OpenLeageDbContext()
+            : base("OpenLeagueDbContext")
+        {
+        }
+
+        public DbSet<Contest> Contests { get; set; }
     }
 }

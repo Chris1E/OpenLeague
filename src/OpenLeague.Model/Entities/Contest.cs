@@ -1,6 +1,7 @@
 ﻿namespace OpenLeague.Model.Entities
 {
     using System;
+    using System.Collections.Generic;
 
     public class Contest
     {
@@ -35,5 +36,7 @@
         public DateTime CloseWarningDate { get; set; }
 
         public DateTime CloseDate { get; set; }
+
+        public virtual ICollection<Match> Matches { get; set; }
     }
 }

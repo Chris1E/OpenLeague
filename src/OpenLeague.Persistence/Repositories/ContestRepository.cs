@@ -7,6 +7,13 @@
 
     public class ContestRepository : IContestRepository
     {
+        private readonly OpenLeageDbContext openLeageDbContext;
+        
+        public ContestRepository()
+        {
+            openLeageDbContext = new OpenLeageDbContext();
+        }
+
         public void Add(Contest entity)
         {
             throw new NotImplementedException();
@@ -14,7 +21,7 @@
 
         public IQueryable<Contest> GetAll()
         {
-            throw new NotImplementedException();
+            return openLeageDbContext.Contests;
         }
 
         public Contest GetSingle(object[] id)
