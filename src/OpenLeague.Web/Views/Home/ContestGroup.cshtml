@@ -1,0 +1,71 @@
+﻿@using OpenLeague.Model.Services
+@model List<ContestViewModel>
+
+@{
+    ViewBag.Title = "ContestGroup";
+}
+
+@*<h3><a href="#">@Model.LeagueListTitle</a></h3>
+*@
+
+<h3><a href="#">My Current Leagues</a></h3>
+
+<div>
+    @if (Model.Count > 0)
+    {
+        <table>
+            <tr>
+                <th>
+                    League Name
+                </th>
+                <th>
+                    Start Date
+                </th>
+                <th>
+                    End Date
+                </th>
+                <th />
+                
+@*                @if (Model.DeletableCount > 0 || Model.RestorableCount > 0)
+                {
+                    <th />
+                }*@
+            </tr>
+
+            @foreach (ContestViewModel contest in Model)
+            {
+                <tr>
+                    <td>
+                        @contest.Name
+@*                        @Html.ActionLink(@contest.Name, @contest.Name, "Contest", new { leagueId = @contest.Id }, new { })
+*@                    </td>
+                    <td>
+                        @contest.StartDate.ToLongDateString()
+                    </td>
+                    <td>
+                        @contest.EndDate.ToLongDateString()
+                    </td>
+                    <td>
+                        Properties
+                        @*                        @Html.ActionLink("Properties", "Properties", "Contest", new { leagueId = @contest.Id }, new { })
+*@                    
+                    </td>
+                    
+                    @*@if (@contest.CanDelete)
+                    {
+                        <td>
+                            @Html.ActionLink("Delete", "Delete", "LeagueList", new { leagueId = @contest.LeagueId }, new { })
+                        </td>
+                    }
+                    else if (@contest.CanRestore)
+                    {
+                        <td>
+                            @Html.ActionLink("Restore", "Restore", "LeagueList", new { leagueId = @contest.LeagueId }, new { })
+                        </td>
+                    }*@
+                </tr>
+            }
+        </table>
+        <br/>
+    }
+</div>

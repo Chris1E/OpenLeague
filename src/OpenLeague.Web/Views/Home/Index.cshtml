@@ -1,5 +1,15 @@
-﻿@{
+﻿@using OpenLeague.Model.Services
+@model IEnumerable<ContestViewModel>
+
+@{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+
+<div id="accordion">
+    
+    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+
+</div>
+
