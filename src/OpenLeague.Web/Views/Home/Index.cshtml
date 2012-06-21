@@ -1,15 +1,8 @@
-﻿@using OpenLeague.Model.Services
-@model IEnumerable<ContestViewModel>
-
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "1E Open League";
 }
 
-<h2>Index</h2>
-
-<div id="accordion">
-    
-    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
-
-</div>
-
+<h2>@ViewBag.Message</h2>
+<p>
+   Using the table tennis as a base we want to create a league and tournament web site for all sports on the cloud. The aim is to learn how to write applications for the cloud and to provide an open source application for others in the company to reference. They can then contribute to code the site and learn git, web development, MVC, cloud based applications, etc... for themselves. This will be an internal tool but we can offer it to the outside world as a league / tournament management site.
+</p>

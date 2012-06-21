@@ -28,8 +28,8 @@
                 
 @*                @if (Model.DeletableCount > 0 || Model.RestorableCount > 0)
                 {
-                    <th />
-                }*@
+*@                    <th />
+ @*               }*@
             </tr>
 
             @foreach (ContestViewModel contest in Model)
@@ -50,7 +50,9 @@
                         @*                        @Html.ActionLink("Properties", "Properties", "Contest", new { leagueId = @contest.Id }, new { })
 *@                    
                     </td>
-                    
+                    <td>
+                        <a>Delete</a>
+                    </td>
                     @*@if (@contest.CanDelete)
                     {
                         <td>

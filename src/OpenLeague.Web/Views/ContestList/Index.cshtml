@@ -1,0 +1,20 @@
+﻿@using OpenLeague.Model.Services
+@model IEnumerable<ContestViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="accordion">
+    
+    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+    
+    @*    Add some extra ones to give an isdea of what the accordion will look like*@
+
+    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+
+</div>
+
