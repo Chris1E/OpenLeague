@@ -13,7 +13,7 @@
 
         public int RoundLengthInDays { get; set; }
 
-        public string CreatedBy { get; set; }
+        public Player CreatedBy { get; set; }
 
         public bool Deleted { get; set; }
 
