@@ -76,7 +76,7 @@
       <Name>OpenLeague.Persistence</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\OpenLeague.Web\OpenLeague.Web.csproj">
-      <Project>{21E0D837-0AB8-497A-AE1A-65CA4619CB39}</Project>
+      <Project>{C3A779EC-A6D5-4356-9973-829B5D64E721}</Project>
       <Name>OpenLeague.Web</Name>
     </ProjectReference>
   </ItemGroup>

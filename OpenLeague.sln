@@ -5,8 +5,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8932862-E24
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E7C0CF22-69D6-42E3-9F78-827F3B1427E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Web", "src\OpenLeague.Web\OpenLeague.Web.csproj", "{21E0D837-0AB8-497A-AE1A-65CA4619CB39}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E43CB6A2-9FDA-464A-81A2-4512FA5BC22C}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.exe = .nuget\NuGet.exe
@@ -23,16 +21,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Persistence", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Tests", "test\OpenLeague.Tests\OpenLeague.Tests.csproj", "{790780BB-555D-484E-A393-4A8FA3715AA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenLeague.Web", "src\OpenLeague.Web\OpenLeague.Web.csproj", "{C3A779EC-A6D5-4356-9973-829B5D64E721}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{21E0D837-0AB8-497A-AE1A-65CA4619CB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21E0D837-0AB8-497A-AE1A-65CA4619CB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21E0D837-0AB8-497A-AE1A-65CA4619CB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21E0D837-0AB8-497A-AE1A-65CA4619CB39}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4CFBE22-A918-4165-AA96-705B74E208D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,16 +49,20 @@ Global
 		{790780BB-555D-484E-A393-4A8FA3715AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{790780BB-555D-484E-A393-4A8FA3715AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{790780BB-555D-484E-A393-4A8FA3715AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A779EC-A6D5-4356-9973-829B5D64E721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A779EC-A6D5-4356-9973-829B5D64E721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A779EC-A6D5-4356-9973-829B5D64E721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A779EC-A6D5-4356-9973-829B5D64E721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{21E0D837-0AB8-497A-AE1A-65CA4619CB39} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{A4CFBE22-A918-4165-AA96-705B74E208D9} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{5C15A5B1-E5E6-437A-9659-3FE42938255E} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{452F12A4-951E-42B7-8ABD-9691170D18A5} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{2CA02994-2FD6-4BD1-A620-29493741D33F} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
+		{C3A779EC-A6D5-4356-9973-829B5D64E721} = {A8932862-E244-43DE-9F65-5350ECCC7FC3}
 		{790780BB-555D-484E-A393-4A8FA3715AA2} = {E7C0CF22-69D6-42E3-9F78-827F3B1427E1}
 	EndGlobalSection
 EndGlobal

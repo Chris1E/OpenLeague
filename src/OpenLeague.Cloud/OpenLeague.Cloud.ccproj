@@ -39,7 +39,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OpenLeague.Web\OpenLeague.Web.csproj">
       <Name>OpenLeague.Web</Name>
-      <Project>{21e0d837-0ab8-497a-ae1a-65ca4619cb39}</Project>
+      <Project>{c3a779ec-a6d5-4356-9973-829b5d64e721}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>OpenLeague.Web</RoleName>
