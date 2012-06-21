@@ -16,7 +16,8 @@
         public ActionResult Index()
         {
             var contestViewModels = contestManagementService.GetAllContests();
-            return View(contestViewModels);
+            var contextCollectionViewModel = new ContextCollectionViewModel(contestViewModels);
+            return View(contextCollectionViewModel);
         }
     }
 }

@@ -33,9 +33,9 @@
 
         public int BestOutOf { get; set; }
 
-        public DateTime CloseWarningDate { get; set; }
+        public DateTime EndWarningDate { get; set; }
 
-        public DateTime CloseDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         public virtual ICollection<Match> Matches { get; set; }
     }

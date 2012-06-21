@@ -1,5 +1,5 @@
 ﻿@using OpenLeague.Model.Services
-@model IEnumerable<ContestViewModel>
+@model ContextCollectionViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -9,12 +9,14 @@
 
 <div id="accordion">
     
-    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+    <h3><a href="#">My Current Leagues</a></h3>
+    @{ Html.RenderPartial("ContestGroup", Model.MyCurrentLeagues); }
     
-    @*    Add some extra ones to give an isdea of what the accordion will look like*@
+    <h3><a href="#">My Old Leagues</a></h3>
+    @{ Html.RenderPartial("ContestGroup", Model.MyOldLeagues); }
 
-    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
-    @{ Html.RenderPartial("ContestGroup", Model.ToList()); }
+    <h3><a href="#">My Deleted Leagues</a></h3>
+    @{ Html.RenderPartial("ContestGroup", Model.MyDeletedLeagues); }
 
 </div>
 

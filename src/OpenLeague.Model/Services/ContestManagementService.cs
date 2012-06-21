@@ -16,10 +16,14 @@ namespace OpenLeague.Model.Services
 
         public IEnumerable<ContestViewModel> GetAllContests()
         {
-            return (from contest in contestRepository.GetAll() 
+            return (from contest in contestRepository.GetAll()
                     select new ContestViewModel
                         {
-                            Name = contest.Name, Id = contest.Id, StartDate = contest.StartDate, EndDate = contest.StartDate
+                            Deleted = contest.Deleted,
+                            EndDate = contest.EndDate,
+                            Id = contest.Id,
+                            Name = contest.Name,
+                            StartDate = contest.StartDate
                         })
                     .ToList();
         }

@@ -12,6 +12,8 @@ namespace OpenLeague.Model.Services
 
         public DateTime EndDate { get; set; }
 
+        public bool Deleted { get; set; }
+
         public string StartDateFomatted
         {
             get

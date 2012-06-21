@@ -91,15 +91,15 @@ INSERT INTO Contests
 (
 	Id, Name, StartDate, RoundLengthInDays, CreatedBy_Id, Deleted, PromotionSpots,
 	PlayoffSpots, ReligationSpots, WinPoints, WinByDefaultPoints, PlayingPoints,
-	NumberOfAllowedDefaultWins, BestOutOf, CloseWarningDate, CloseDate, Discriminator
+	NumberOfAllowedDefaultWins, BestOutOf, EndWarningDate, EndDate, Discriminator
 )
 SELECT	C.Id, C.Name, C.StartDate, C.RoundLengthInDays, P.Id, C.Deleted, C.PromotionSpots,
 		C.PlayoffSpots, C.ReligationSpots, C.WinPoints, C.WinByDefaultPoints, C.PlayingPoints,
-		C.NumberOfAllowedDefaultWins, C.BestOutOf, C.CloseWarningDate, C.CloseDate, 'Contest'
+		C.NumberOfAllowedDefaultWins, C.BestOutOf, C.EndWarningDate, C.EndDate, 'Contest'
 FROM	Players P
 			INNER JOIN
 			(
-				SELECT NEWID() Id, 'DONTUSETHISONE' Name, '' StartDate, 0 RoundLengthInDays, '' CreatedBy, 1 Deleted, 1 PromotionSpots, 1 PlayoffSpots, 1 ReligationSpots, 1 WinPoints, 1 WinByDefaultPoints, 1 PlayingPoints, 1 NumberOfAllowedDefaultWins, 1 BestOutOf, '' CloseWarningDate, '' CloseDate WHERE 1=0
+				SELECT NEWID() Id, 'DONTUSETHISONE' Name, '' StartDate, 0 RoundLengthInDays, '' CreatedBy, 1 Deleted, 1 PromotionSpots, 1 PlayoffSpots, 1 ReligationSpots, 1 WinPoints, 1 WinByDefaultPoints, 1 PlayingPoints, 1 NumberOfAllowedDefaultWins, 1 BestOutOf, '' EndWarningDate, '' EndDate WHERE 1=0
 				UNION SELECT NEWID(), 'Game 1 - Shopping grudge match.', '30 Mar 2011', 2, '1e\Chris.Shallcross', 0, 0, 0, 0, 1, 1, 0, 5, 3, '31 Dec 2011', '31 Dec 2011'
 				UNION SELECT NEWID(), 'Game 2 - NightWatchman Server', '11 Apr 2011', 5, '1e\Chris.Shallcross', 1, 0, 0, 0, 1, 1, 0, 5, 3, '31 Dec 2011', '31 Dec 2011'
 				UNION SELECT NEWID(), 'Game 3 - 1E Open League', '14 Apr 2011', 2, '1e\Chris.Shallcross', 0, 0, 0, 0, 1, 1, 0, 21, 3, '31 Dec 2011', '31 Dec 2011'

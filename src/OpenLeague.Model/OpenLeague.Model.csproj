@@ -57,6 +57,7 @@
     <Compile Include="Repositories\IContestRepository.cs" />
     <Compile Include="Services\ContestManagementService.cs" />
     <Compile Include="Services\ContestViewModel.cs" />
+    <Compile Include="Services\ContextCollectionViewModel.cs" />
     <Compile Include="Services\IContestManagementService.cs" />
   </ItemGroup>
   <ItemGroup>
