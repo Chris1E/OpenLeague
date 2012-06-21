@@ -11,5 +11,21 @@ namespace OpenLeague.Model.Services
         public DateTime StartDate { get; set; }
 
         public DateTime EndDate { get; set; }
+
+        public string StartDateFomatted
+        {
+            get
+            {
+                return StartDate.ToString("d MMM yyyy");
+            }
+        }
+
+        public string EndDateFormatted
+        {
+            get
+            {
+                return EndDate.ToString("d MMM yyyy");
+            }
+        }
     }
 }

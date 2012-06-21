@@ -40,14 +40,15 @@
 @*                        @Html.ActionLink(@contest.Name, @contest.Name, "Contest", new { leagueId = @contest.Id }, new { })
 *@                    </td>
                     <td>
-                        @contest.StartDate.ToLongDateString()
+                        @contest.StartDateFomatted
                     </td>
                     <td>
-                        @contest.EndDate.ToLongDateString()
+                        @contest.EndDateFormatted
                     </td>
                     <td>
                         Properties
-                        @*                        @Html.ActionLink("Properties", "Properties", "Contest", new { leagueId = @contest.Id }, new { })
+                        @*
+                        @Html.ActionLink("Properties", "Properties", "Contest", new { leagueId = @contest.Id }, new { })
 *@                    
                     </td>
                     <td>
