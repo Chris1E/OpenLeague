@@ -12,5 +12,7 @@
         }
 
         public DbSet<Contest> Contests { get; set; }
+
+        public DbSet<Player> Players { get; set; }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="Autofac.Integration.Mvc">
       <HintPath>..\..\packages\Autofac.Mvc4.2.6.2.859\lib\NET40\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -129,7 +130,6 @@
     <Content Include="Content\Images\BannerLogo.png" />
     <Content Include="Content\site.css" />
     <Content Include="Content\themes\base\jquery-ui.css" />
-    <Content Include="Data.sql" />
     <Content Include="Global.asax" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\ContestList\ContestGroup.cshtml" />
