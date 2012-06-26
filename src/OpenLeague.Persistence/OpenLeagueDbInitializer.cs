@@ -204,10 +204,7 @@
                 new Contest { Id = Guid.NewGuid(), Name = "First Floor Titans", StartDate = new DateTime(2012, 4, 15), RoundLengthInDays = 4, CreatedBy = playerAndrewBishop, Deleted = false, PromotionSpots = 0, PlayoffSpots = 0, ReligationSpots = 0, WinPoints = 3, WinByDefaultPoints = 2, PlayingPoints = 1, NumberOfAllowedDefaultWins = 3, BestOutOf = 3, EndWarningDate = new DateTime(2012, 5, 14), EndDate = new DateTime(2012, 5, 18) }
             };
 
-            foreach (var contest in contents)
-            {
-                context.Contests.Add(contest);
-            }
+            contents.ForEach(c => context.Contests.Add(c));
             
             base.Seed(context);
         }
