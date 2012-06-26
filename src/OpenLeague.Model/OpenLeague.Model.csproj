@@ -44,14 +44,11 @@
   <ItemGroup>
     <Compile Include="Entities\Contest.cs" />
     <Compile Include="Entities\History.cs" />
-    <Compile Include="Entities\Knockout.cs" />
-    <Compile Include="Entities\League.cs" />
     <Compile Include="Entities\Match.cs" />
     <Compile Include="Entities\NonPlayingDays.cs" />
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Entities\Schedule.cs" />
     <Compile Include="Entities\Title.cs" />
-    <Compile Include="Entities\Tournament.cs" />
     <Compile Include="Entities\Trophy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IContestRepository.cs" />
