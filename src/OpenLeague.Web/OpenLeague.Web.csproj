@@ -158,17 +158,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenLeague.Infrastructure\OpenLeague.Infrastructure.csproj">
-      <Project>{5C15A5B1-E5E6-437A-9659-3FE42938255E}</Project>
-      <Name>OpenLeague.Infrastructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OpenLeague.Model\OpenLeague.Model.csproj">
       <Project>{452F12A4-951E-42B7-8ABD-9691170D18A5}</Project>
       <Name>OpenLeague.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenLeague.Persistence\OpenLeague.Persistence.csproj">
-      <Project>{2CA02994-2FD6-4BD1-A620-29493741D33F}</Project>
-      <Name>OpenLeague.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

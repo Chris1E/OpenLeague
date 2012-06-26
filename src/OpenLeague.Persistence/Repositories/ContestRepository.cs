@@ -1,6 +1,7 @@
 ﻿namespace OpenLeague.Persistence.Repositories
 {
     using System;
+    using System.Data.Entity;
     using System.Linq;
     using OpenLeague.Model.Entities;
     using OpenLeague.Model.Repositories;
@@ -11,6 +12,8 @@
         
         public ContestRepository()
         {
+            Database.SetInitializer(new OpenLeagueDbInitializer());
+
             openLeagueDbContext = new OpenLeagueDbContext();
         }
 

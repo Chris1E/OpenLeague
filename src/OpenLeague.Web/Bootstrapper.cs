@@ -7,7 +7,6 @@
     using Autofac.Integration.Mvc;
 
     using OpenLeague.Model.Services;
-    using OpenLeague.Persistence.Repositories;
 
     public static class Bootstrapper
     {
@@ -29,7 +28,7 @@
             //    anything that ends in Repository, 
             //    for the callers that require the interface, 
             //    create one per HTTP request.
-            builder.RegisterAssemblyTypes(typeof(ContestRepository).Assembly).Where(t => t.Name.EndsWith("Repository"))
+            builder.RegisterAssemblyTypes(Assembly.Load("OpenLeague.Persistence")).Where(t => t.Name.EndsWith("Repository"))
                 .AsImplementedInterfaces().InstancePerHttpRequest();
 
             builder.RegisterAssemblyTypes(typeof(ContestManagementService).Assembly).Where(
