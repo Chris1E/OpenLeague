@@ -10,9 +10,9 @@
 
         public int LeagueRound { get; set; }
 
-        public Guid HomePlayerId { get; set; }
+        public Player HomePlayer { get; set; }
 
-        public Guid AwayPlayerId { get; set; }
+        public Player AwayPlayer { get; set; }
 
         public char Result { get; set; }
 
