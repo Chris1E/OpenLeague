@@ -7,11 +7,11 @@
 
     public class ContestRepository : IContestRepository
     {
-        private readonly OpenLeageDbContext openLeageDbContext;
+        private readonly OpenLeagueDbContext openLeagueDbContext;
         
         public ContestRepository()
         {
-            openLeageDbContext = new OpenLeageDbContext();
+            openLeagueDbContext = new OpenLeagueDbContext();
         }
 
         public void Add(Contest entity)
@@ -21,7 +21,7 @@
 
         public IQueryable<Contest> GetAll()
         {
-            return openLeageDbContext.Contests;
+            return openLeagueDbContext.Contests;
         }
 
         public Contest GetSingle(object[] id)

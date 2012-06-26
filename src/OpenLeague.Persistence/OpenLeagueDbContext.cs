@@ -4,9 +4,9 @@
 
     using OpenLeague.Model.Entities;
 
-    public class OpenLeageDbContext : DbContext
+    public class OpenLeagueDbContext : DbContext
     {
-        public OpenLeageDbContext()
+        public OpenLeagueDbContext()
             : base("OpenLeagueDbContext")
         {
         }
