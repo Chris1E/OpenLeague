@@ -4,6 +4,7 @@ namespace OpenLeague.Model.Services
     using System.Linq;
 
     using OpenLeague.Model.Repositories;
+    using OpenLeague.Model.ViewModels;
 
     public class ContestManagementService : IContestManagementService
     {

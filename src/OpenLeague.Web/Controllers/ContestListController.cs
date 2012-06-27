@@ -3,6 +3,7 @@
     using System.Web.Mvc;
 
     using OpenLeague.Model.Services;
+    using OpenLeague.Model.ViewModels;
 
     public class ContestListController : Controller
     {

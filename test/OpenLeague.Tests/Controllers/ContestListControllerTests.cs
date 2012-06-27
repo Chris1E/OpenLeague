@@ -11,6 +11,7 @@ namespace OpenLeague.Tests.Controllers
     using NUnit.Framework;
 
     using OpenLeague.Model.Services;
+    using OpenLeague.Model.ViewModels;
     using OpenLeague.Web.Controllers;
 
     /// <summary>

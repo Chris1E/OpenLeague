@@ -1,4 +1,4 @@
-﻿namespace OpenLeague.Model.Services
+﻿namespace OpenLeague.Model.ViewModels
 {
     using System;
     using System.Collections.Generic;
