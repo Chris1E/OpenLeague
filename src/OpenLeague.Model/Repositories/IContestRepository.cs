@@ -5,5 +5,6 @@ namespace OpenLeague.Model.Repositories
 
     public interface IContestRepository : IRepository<Contest>
     {
+        
     }
 }

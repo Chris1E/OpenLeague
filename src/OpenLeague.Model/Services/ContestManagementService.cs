@@ -1,8 +1,11 @@
 namespace OpenLeague.Model.Services
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
+    using OpenLeague.Infrastructure.Commands;
+    using OpenLeague.Model.Command;
     using OpenLeague.Model.Repositories;
     using OpenLeague.Model.ViewModels;
 
@@ -10,9 +13,12 @@ namespace OpenLeague.Model.Services
     {
         private readonly IContestRepository contestRepository;
 
-        public ContestManagementService(IContestRepository contestRepository)
+        private readonly ICommandDispatcher commandDispatcher;
+
+        public ContestManagementService(IContestRepository contestRepository, ICommandDispatcher commandDispatcher)
         {
             this.contestRepository = contestRepository;
+            this.commandDispatcher = commandDispatcher;
         }
 
         public IEnumerable<ContestViewModel> GetAllContests()
@@ -27,6 +33,12 @@ namespace OpenLeague.Model.Services
                             StartDate = contest.StartDate
                         })
                     .ToList();
+        }
+
+        public void DeleteById(Guid contestId)
+        {
+            var deleteContestCommand = new ContestDeleteCommand(contestId);
+            commandDispatcher.Dispatch(deleteContestCommand);
         }
     }
 }

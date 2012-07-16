@@ -1,5 +1,6 @@
 ﻿namespace OpenLeague.Infrastructure.Persistence
 {
+    using System;
     using System.Linq;
 
     public interface IRepository<T>
@@ -8,6 +9,8 @@
 
         IQueryable<T> GetAll();
 
-        T GetSingle(object[] id);
+        T GetSingle(Guid id);
+
+        void Update(T entity);
     }
 }

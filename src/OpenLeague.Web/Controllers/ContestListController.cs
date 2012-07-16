@@ -1,5 +1,6 @@
 ﻿namespace OpenLeague.Web.Controllers
 {
+    using System;
     using System.Web.Mvc;
 
     using OpenLeague.Model.Services;
@@ -14,11 +15,19 @@
             this.contestManagementService = contestManagementService;
         }
 
+        [HttpGet]
         public ActionResult Index()
         {
             var contestViewModels = contestManagementService.GetAllContests();
             var contextCollectionViewModel = new ContextCollectionViewModel(contestViewModels);
             return View(contextCollectionViewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Guid contestId)
+        {
+            contestManagementService.DeleteById(contestId);
+            return RedirectToRoute("Index");
         }
     }
 }

@@ -52,14 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandHandler\ContestDeleteCommandHandlerTests.cs" />
     <Compile Include="Controllers\ContestListControllerTests.cs" />
     <Compile Include="Controllers\HomeControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ContestManagementServiceTests.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommandHandler\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

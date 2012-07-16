@@ -1,5 +1,6 @@
 namespace OpenLeague.Model.Services
 {
+    using System;
     using System.Collections.Generic;
 
     using OpenLeague.Model.ViewModels;
@@ -7,5 +8,7 @@ namespace OpenLeague.Model.Services
     public interface IContestManagementService
     {
         IEnumerable<ContestViewModel> GetAllContests();
+
+        void DeleteById(Guid contestId);
     }
 }

@@ -27,9 +27,14 @@
             return openLeagueDbContext.Contests;
         }
 
-        public Contest GetSingle(object[] id)
+        public Contest GetSingle(Guid id)
         {
-            throw new NotImplementedException();
+            return openLeagueDbContext.Contests.Find(id);
+        }
+
+        public void Update(Contest contest)
+        {
+            openLeagueDbContext.Contests.Attach(contest);
         }
     }
 }
